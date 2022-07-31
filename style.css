@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #f5f5dc;
+}
+
+body.dark {
+	background-color: #36454f;
+}
+
+button {
+	outline: none;
+	border: 2px solid dodgerblue;
+	border-radius: 0.5rem;
+
+	padding: 1.5rem;
+
+	background: dodgerblue;
+	color: white;
+
+	font-size: 2rem;
+	font-weight: 600;
+
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+button:focus {
+	background: white;
+	color: dodgerblue;
+}
+
+#message.active {
+	display: block;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	min-height: 3rem;
+
+	background-color: dodgerblue;
+	color: white;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+#message {
+	display: none;
+}
